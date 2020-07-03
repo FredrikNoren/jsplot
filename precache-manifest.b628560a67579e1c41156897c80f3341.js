@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9e453243c0b501947cc8dcbb6b060ebe",
+    "revision": "75f00609be2235454195f60e1c5d5d80",
     "url": "/jsplot/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jsplot/static/css/2.932f93f0.chunk.css"
   },
   {
-    "revision": "5c0b737757a7254f336f",
-    "url": "/jsplot/static/css/main.26a763d8.chunk.css"
+    "revision": "3d19d54feb8e1d1c4fad",
+    "url": "/jsplot/static/css/main.7c90e151.chunk.css"
   },
   {
     "revision": "64c2ccc7624f39249860",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jsplot/static/js/2.a75721d2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5c0b737757a7254f336f",
-    "url": "/jsplot/static/js/main.0f7c15d5.chunk.js"
+    "revision": "3d19d54feb8e1d1c4fad",
+    "url": "/jsplot/static/js/main.08e29052.chunk.js"
   },
   {
     "revision": "e993c8797b32442197e0",
