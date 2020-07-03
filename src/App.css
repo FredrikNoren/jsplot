@@ -12,6 +12,9 @@
 .Left, .Right {
   width: 50%;
 }
+.Right {
+  min-width: 630px;
+}
 .Left > div {
   flex: 1;
   display: flex;

@@ -4,8 +4,8 @@ import './App.css';
 import { Plot } from './Plot';
 
 function App() {
-  const [source, setSource] = React.useState(`return [];`);
-  const [data, setData] = React.useState<number[]>([]);
+  const [data, setData] = React.useState<number[]>([3, 1, 2]);
+  const [source, setSource] = React.useState(`return [3, 1, 2];`);
   const [error, setError] = React.useState('');
   return (
     <div className="App">
@@ -23,6 +23,12 @@ function App() {
             }
             setError('');
             if (result && Array.isArray(result)) {
+              for (let i=0; i < result.length; i++) {
+                if (typeof result[i] !== 'number') {
+                  setError(`Element ${i} is not a number`);
+                  return;
+                }
+              }
               setData(result);
             }
           }}
