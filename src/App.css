@@ -1,38 +1,42 @@
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  color: #bbb;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Left, .Right {
+  width: 50%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Left > div {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+}
+.Right .Plot {
+  margin-top: 20px;
+}
+.CodeMirror {
+  flex: 1;
+}
+.Error {
+  margin-top: 20px;
+  color: rgb(247, 78, 27);
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.Header {
+  font-size: 12px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  color: #eaea70;
 }

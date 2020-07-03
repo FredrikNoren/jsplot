@@ -1,15 +1,22 @@
 {
   "name": "jsplot",
   "version": "0.1.0",
+  "homepage": "https://FredrikNoren.github.io/jsplot",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/codemirror": "^0.0.96",
     "@types/jest": "^24.0.0",
+    "@types/lodash": "^4.14.157",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "codemirror": "^5.55.0",
+    "codemirror-one-dark-theme": "^1.1.1",
+    "gh-pages": "^3.1.0",
+    "lodash": "^4.17.15",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
@@ -19,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
