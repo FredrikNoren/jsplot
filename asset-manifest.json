@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/jsplot/static/css/main.26a763d8.chunk.css",
+    "main.js": "/jsplot/static/js/main.0f7c15d5.chunk.js",
+    "main.js.map": "/jsplot/static/js/main.0f7c15d5.chunk.js.map",
+    "runtime-main.js": "/jsplot/static/js/runtime-main.5117add3.js",
+    "runtime-main.js.map": "/jsplot/static/js/runtime-main.5117add3.js.map",
+    "static/css/2.932f93f0.chunk.css": "/jsplot/static/css/2.932f93f0.chunk.css",
+    "static/js/2.a75721d2.chunk.js": "/jsplot/static/js/2.a75721d2.chunk.js",
+    "static/js/2.a75721d2.chunk.js.map": "/jsplot/static/js/2.a75721d2.chunk.js.map",
+    "index.html": "/jsplot/index.html",
+    "precache-manifest.f22426c034b0b1285e3b74f83ed8fd67.js": "/jsplot/precache-manifest.f22426c034b0b1285e3b74f83ed8fd67.js",
+    "service-worker.js": "/jsplot/service-worker.js",
+    "static/css/2.932f93f0.chunk.css.map": "/jsplot/static/css/2.932f93f0.chunk.css.map",
+    "static/css/main.26a763d8.chunk.css.map": "/jsplot/static/css/main.26a763d8.chunk.css.map",
+    "static/js/2.a75721d2.chunk.js.LICENSE.txt": "/jsplot/static/js/2.a75721d2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5117add3.js",
+    "static/css/2.932f93f0.chunk.css",
+    "static/js/2.a75721d2.chunk.js",
+    "static/css/main.26a763d8.chunk.css",
+    "static/js/main.0f7c15d5.chunk.js"
+  ]
+}
