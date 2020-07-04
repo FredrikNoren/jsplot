@@ -6,7 +6,7 @@ import * as React from 'react';
 import CodeMirrorInstance from 'codemirror';
 import "codemirror/lib/codemirror.css";
 import 'codemirror-one-dark-theme/one-dark.css';
-require('codemirror/mode/clike/clike');
+require('codemirror/mode/javascript/javascript');
 
 export interface CodeMirrorProps {
   options?: CodeMirrorInstance.EditorConfiguration;

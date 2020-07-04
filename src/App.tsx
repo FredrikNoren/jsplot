@@ -34,7 +34,7 @@ function App() {
           }}
           options={{
             theme: 'one-dark',
-            mode: 'clike',
+            mode: 'javascript',
             lineNumbers: true
           }}
           />
