@@ -1,10 +1,32 @@
 import React from 'react';
 import { CodeMirror } from './CodeMirror';
 import './App.css';
-import { Plot } from './Plot';
+import { Plot, PlotLine } from './Plot';
+
+function resultToPlotLines(result: any): PlotLine[] {
+  if (!result) {
+    return [];
+  }
+  if (Array.isArray(result)) {
+    for (let i=0; i < result.length; i++) {
+      if (typeof result[i] !== 'number') {
+        return [];
+      }
+    }
+    return [{ data: result, label: 'Data' }];
+  } else if (typeof result === 'object') {
+    let res: PlotLine[] = [];
+    for (const key of Object.keys(result)) {
+      res = [...res, ...resultToPlotLines(result[key]).map(x => ({...x, label: key }))];
+    }
+    return res;
+  } else {
+    return [];
+  }
+}
 
 function App() {
-  const [data, setData] = React.useState<number[]>([3, 1, 2]);
+  const [data, setData] = React.useState<PlotLine[]>([{ data: [3, 1, 2], label: 'Data' }]);
   const [source, setSource] = React.useState(`return [3, 1, 2];`);
   const [error, setError] = React.useState('');
   return (
@@ -22,15 +44,7 @@ function App() {
               return;
             }
             setError('');
-            if (result && Array.isArray(result)) {
-              for (let i=0; i < result.length; i++) {
-                if (typeof result[i] !== 'number') {
-                  setError(`Element ${i} is not a number`);
-                  return;
-                }
-              }
-              setData(result);
-            }
+            setData(resultToPlotLines(result));
           }}
           options={{
             theme: 'one-dark',
@@ -40,7 +54,7 @@ function App() {
           />
       </div>
       <div className="Right">
-        <Plot lines={[{ data, label: 'Data' }]} />
+        <Plot lines={data} />
         <div className="Error">{error}</div>
       </div>
       <div className="Header">
